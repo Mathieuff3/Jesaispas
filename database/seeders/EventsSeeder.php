@@ -3,8 +3,11 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\DB;
 
+=======
+>>>>>>> af2438d50a4f747efc6a60381f2a65e3cd4fc0b1
 
 class EventsSeeder extends Seeder
 {
@@ -15,6 +18,7 @@ class EventsSeeder extends Seeder
      */
     public function run()
     {
+<<<<<<< HEAD
         DB::table('events')->insert([
             ['name' => 'nana',
             'address' => '3 avenue montaigne',
@@ -35,5 +39,8 @@ class EventsSeeder extends Seeder
             'day' => 'jeudi',
             'user_id' => '4'],
             ]);
+=======
+        //
+>>>>>>> af2438d50a4f747efc6a60381f2a65e3cd4fc0b1
     }
 }
