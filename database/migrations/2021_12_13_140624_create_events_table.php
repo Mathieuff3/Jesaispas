@@ -16,6 +16,7 @@ class CreateEventsTable extends Migration
         Schema::create('events', function(Blueprint $table) {
             $table->id();
             $table->string("name", 100);
+            $table->string("content", 500);
             $table->string("address")->unique();
             $table->unsignedBigInteger("category_id");
             $table->foreign("category_id")->on("categories")->references("id");
